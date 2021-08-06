@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Blog</title>
+    <style>
+        html,
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .postHeader {
+            font-size: 40px;
+        }
+
+        .postImage {
+            width: 100%;
+        }
+
+        .postPreview {
+            font-size: 22px;
+        }
+
+        @media (min-width: 768px) {
+            .postImage {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="post">
+        <a href="jams.html" class="post">
+            <div class="postHeader">4 game jams</div>
+            <img class="postImage" src="jams.png">
+        </a>
+        <div class="postPreview">I participated in 4 game jams on <a href="http://itch.io/">itch.io</a></div>
+    </div>
+    <div class="post">
+        <a href="threeWebsites.html" class="post">
+            <div class="postHeader">3 websites up and running</div>
+            <img class="postImage" src="websites.png">
+        </a>
+        <div class="postPreview">Ships, Sender and portfolio has been created.</div>
+    </div>
+</body>
+
+</html>
